@@ -96,8 +96,8 @@ Input	Edge-trigger key handling	Prevent key hold
 Scoring	Frame counter → time calculation	Bonuses
 
 📁 Project Structure
-css
-Copy code
+
+
 Data/
 ├── block1.png
 ├── ghost.png
@@ -205,6 +205,7 @@ Islamabad, Pakistan
 Learning C++ & SFML through iterative game development.
 
 ⭐ Star this repository if it helps your SFML learning
+
 🐛 Issues & Pull Requests are welcome
 
 Last Updated: January 2026
