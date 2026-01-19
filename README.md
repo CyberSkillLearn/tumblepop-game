@@ -78,7 +78,7 @@ Object pool system (no runtime memory allocation)
 Captured Enemies
 Stack-based storage for vacuum-captured enemies
 
-⚙️ Key Systems
+## ⚙️ Key Systems
 
 System	Implementation	Purpose
 Tile Rendering	ASCII grid → sprite positioning	Level layout
@@ -88,52 +88,62 @@ Collision	AABB tile lookup	Player/enemy/bullet
 Input	Edge-trigger key handling	Prevent key hold
 Scoring	Frame counter → time calculation	Bonuses
 
-📁 Project Structure
+## 📁 Project Structure
 
 
-temblepop-game/
-│
+
 ├── Data/
+
 │   ├── block1.png
+
 │   ├── ghost.png
+
 │   ├── skeleton.png
+
 │   ├── player_yellow.png
+
 │   ├── player_green.png
+
 │   ├── flame.png
+
 │   ├── level_clear.png
+
 │   ├── game_over.png
-│   └── menu/
-│       └── (menu images here)
-│
+
+│   └── menu
+
 ├── src/
-│   └── main.cpp
+
+│   └── temblepop.cpp
+
 │
+
 └── README.md
 
 
 
-🎯 Level Design
+## 🎯 Level Design
 
-Level 1 – Basic Capture
+### Level 1 – Basic Capture
 Ghosts:     8  (50 / 100 points)
 Skeletons:  4  (75 / 150 points)
 Grid:       14 x 14
 
-Level 2 – Random Ghosts
+### Level 2 – Random Ghosts
 Ghosts with random pauses & direction changes
 Grid: 16 x 14
 
-Level 3 – Advanced Enemies
+### Level 3 – Advanced Enemies
 Invisible movement & Chelnov-style patterns
 
-📊 Scoring System
+## 📊 Scoring System
 Action	Ghost	Skeleton
 Flame Capture	+50	+75
 Bullet Kill	+100	+150
 Damage Taken	-50	-50
 Game Over	-200	-200
 
-🎁 Level Clear Bonuses
+## 🎁 Level Clear Bonuses
 Level Clear → +1000
 
 No Damage → +1500
@@ -146,7 +156,7 @@ Time Bonus:
 
 ≤ 60s → +500
 
-🔧 Build Instructions
+## 🔧 Build Instructions
 Prerequisites
 g++ (GCC 9+)
 SFML 2.6 development libraries
@@ -156,7 +166,7 @@ brew install sfml                # macOS
 Compile & Run
 g++ -o game main.cpp -lsfml-graphics -lsfml-window -lsfml-system
 ./game
-🐛 Known Issues & TODO
+## 🐛 Known Issues & TODO
 Audio system
 
 Particle effects
@@ -169,7 +179,7 @@ Online leaderboard
 
 Additional enemy types
 
-📈 Performance
+## 📈 Performance
 Fixed 60 FPS
 
 Array-based object pooling
@@ -178,7 +188,7 @@ No runtime memory allocations
 
 Single-pass rendering
 
-🎓 Learning Outcomes
+## 🎓 Learning Outcomes
 SFML fundamentals (sprites, textures, events)
 
 Game loop & state machine design
@@ -191,7 +201,7 @@ Scoring balance & gameplay logic
 
 Debugging with frame counters
 
-👤 Author
+## 👤 Author
 
 Muhammmad Tasawer Sadiq
 
