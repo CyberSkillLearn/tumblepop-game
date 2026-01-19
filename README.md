@@ -44,17 +44,12 @@ This project demonstrates **game states, physics, collision detection, enemy AI,
 ↑ / ↓ Navigate
 Enter Select
 
-shell
-Copy code
 
 ### Gameplay
 WASD + Space Aim & Vacuum Capture
 Z Single Shot
 X Burst Shot
 ESC Pause / Menu
-
-yaml
-Copy code
 
 ---
 
@@ -64,9 +59,6 @@ Copy code
 STATE_MAIN_MENU → STATE_PLAYER_SELECT → STATE_PLAY_LEVEL[1–3]
 ↓
 STATE_SHOW_CONTROLS / LEADERBOARD → STATE_EXIT_GAME
-
-yaml
-Copy code
 
 ---
 
@@ -87,6 +79,7 @@ Captured Enemies
 Stack-based storage for vacuum-captured enemies
 
 ⚙️ Key Systems
+
 System	Implementation	Purpose
 Tile Rendering	ASCII grid → sprite positioning	Level layout
 Player Physics	Gravity & velocity clamping	Jump & fall
@@ -98,35 +91,41 @@ Scoring	Frame counter → time calculation	Bonuses
 📁 Project Structure
 
 
-Data/
-├── block1.png
-├── ghost.png
-├── skeleton.png
-├── player_yellow.png
-├── player_green.png
-├── flame.png
-├── level_clear.png
-├── game_over.png
-└── menu assets...
+temblepop-game/
+│
+├── Data/
+│   ├── block1.png
+│   ├── ghost.png
+│   ├── skeleton.png
+│   ├── player_yellow.png
+│   ├── player_green.png
+│   ├── flame.png
+│   ├── level_clear.png
+│   ├── game_over.png
+│   └── menu/
+│       └── (menu images here)
+│
+├── src/
+│   └── main.cpp
+│
+└── README.md
 
-src/
-└── temblepop.cpp    # Complete game (single-file prototype)
+
+
 🎯 Level Design
+
 Level 1 – Basic Capture
-makefile
-Copy code
 Ghosts:     8  (50 / 100 points)
 Skeletons:  4  (75 / 150 points)
 Grid:       14 x 14
+
 Level 2 – Random Ghosts
-css
-Copy code
 Ghosts with random pauses & direction changes
 Grid: 16 x 14
+
 Level 3 – Advanced Enemies
-mathematica
-Copy code
 Invisible movement & Chelnov-style patterns
+
 📊 Scoring System
 Action	Ghost	Skeleton
 Flame Capture	+50	+75
@@ -149,18 +148,12 @@ Time Bonus:
 
 🔧 Build Instructions
 Prerequisites
-css
-Copy code
 g++ (GCC 9+)
 SFML 2.6 development libraries
 Install SFML
-bash
-Copy code
 sudo apt install libsfml-dev     # Ubuntu / Debian
 brew install sfml                # macOS
 Compile & Run
-bash
-Copy code
 g++ -o game main.cpp -lsfml-graphics -lsfml-window -lsfml-system
 ./game
 🐛 Known Issues & TODO
@@ -199,7 +192,9 @@ Scoring balance & gameplay logic
 Debugging with frame counters
 
 👤 Author
+
 Muhammmad Tasawer Sadiq
+
 Islamabad, Pakistan
 
 Learning C++ & SFML through iterative game development.
