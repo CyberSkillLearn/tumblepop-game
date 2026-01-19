@@ -73,7 +73,7 @@ Copy code
 ### 📦 Data Structures
 
 - **Level Grid**
-```cpp
+
 char lvl[HEIGHT][WIDTH];
 Loaded from ASCII level patterns
 
