@@ -138,9 +138,13 @@ Invisible movement & Chelnov-style patterns
 
 ## 📊 Scoring System
 Action	Ghost	Skeleton
+
 Flame Capture	+50	+75
+
 Bullet Kill	+100	+150
+
 Damage Taken	-50	-50
+
 Game Over	-200	-200
 
 ## 🎁 Level Clear Bonuses
@@ -158,14 +162,22 @@ Time Bonus:
 
 ## 🔧 Build Instructions
 Prerequisites
+
 g++ (GCC 9+)
+
 SFML 2.6 development libraries
 Install SFML
+
 sudo apt install libsfml-dev     # Ubuntu / Debian
+
 brew install sfml                # macOS
+
 Compile & Run
+
 g++ -o game main.cpp -lsfml-graphics -lsfml-window -lsfml-system
+
 ./game
+
 ## 🐛 Known Issues & TODO
 Audio system
 
@@ -201,11 +213,12 @@ Scoring balance & gameplay logic
 
 Debugging with frame counters
 
-## 👤 Author
+## 👤 Developer
 
 Muhammmad Tasawer Sadiq
 
 Islamabad, Pakistan
+
 
 Learning C++ & SFML through iterative game development.
 
